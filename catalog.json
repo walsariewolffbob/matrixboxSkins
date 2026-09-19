@@ -36,7 +36,7 @@
     {
       "id": "tfl_dlr",
       "name": "TfL DLR",
-      "version": "1.1",
+      "version": "1.0",
       "requires_departurebox": "0.2.1",
       "path": "tfl_dlr",
       "protected": false,
