@@ -193,7 +193,8 @@ class DlrSkin:
                 self.f.middle_group.x = self.f.display_width
                 self.f.cls(self.f.bottom)
                 state["message_width"] = self.f.renderstring(
-                    state.get("message", ""), large=True, _cls=self.f.bottom
+                    state.get("message", ""), large=True, _cls=self.f.bottom,
+                    sys_msg="red"
                 )
                 state["phase"] = "scroll_message"
                 if False:
@@ -263,12 +264,12 @@ class DlrSkin:
             
             if _no_more and (_no_more in _msg or not _msg):
                 self.f.set_current_font(0)
-                self.f.renderstring(_no_more, 1, large=True, _cls=self.f.top)
+                self.f.renderstring(_no_more, 1, large=True, _cls=self.f.top, sys_msg="red")
             elif _msg:
                 
                 
                 self.f.set_current_font(0)
-                self.f.renderstring(_msg, 1, large=True, _cls=self.f.top)
+                self.f.renderstring(_msg, 1, large=True, _cls=self.f.top, sys_msg="red")
 
             return time.monotonic()
 
@@ -423,13 +424,13 @@ class DlrSkin:
             
             
             _night_highlight = _night_highlight_enabled and self.f.is_night_bus_line(row[1])
-            line_colour = "red" if _night_highlight else ("white" if int(self.f.settings.get("listcolor", 0)) else "yellow")
-            time_colour = "red" if _night_highlight else ("white" if int(self.f.settings.get("listcolor_time", 0)) else "yellow")
+            line_colour = "red"
+            time_colour = "red"
             prefix_width = self._font_width(prefix, font_index)
             self.f.renderstring(prefix, 0, large=(font_index == 0), smallfont=(font_index != 0),
                          target_bmp=bmp, target_offs=y, start_x=0, sys_msg=line_colour)
             self.f.renderstring(dest, 0, large=(font_index == 0), smallfont=(font_index != 0),
-                         target_bmp=bmp, target_offs=y, start_x=prefix_width)
+                         target_bmp=bmp, target_offs=y, start_x=prefix_width, sys_msg="red")
             self.f.renderstring(value, 0, large=(font_index == 0), smallfont=(font_index != 0),
                          target_bmp=bmp, target_offs=y, start_x=value_x, sys_msg=time_colour)
 
@@ -443,6 +444,6 @@ class DlrSkin:
         if _show_dlr_clock:
             
             self.f.renderstring(_dlr_clock, 0, large=True, target_bmp=self.f.bottom, target_offs=3,
-                         start_x=_dlr_clock_x, sys_msg=self.f.settings.get("clock_row_color", "white"))
+                         start_x=_dlr_clock_x, sys_msg="red")
 
         return time.monotonic()
