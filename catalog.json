@@ -9,7 +9,7 @@
       "version": "1.1",
       "requires_departurebox": "0.2.1",
       "path": "sl_classic",
-      "protected": false
+      "protected": true
     },
     {
       "id": "sl_list",
