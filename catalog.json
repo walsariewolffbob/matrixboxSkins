@@ -9,7 +9,14 @@
       "version": "1.1",
       "requires_departurebox": "0.2.1",
       "path": "sl_classic",
-      "protected": true
+      "protected": true,
+      "files": [
+        "skin.json",
+        "__init__.py",
+        "manifest.py",
+        "renderer.py",
+        "implementation.py"
+      ]
     },
     {
       "id": "sl_list",
@@ -17,7 +24,14 @@
       "version": "1.1",
       "requires_departurebox": "0.2.1",
       "path": "sl_list",
-      "protected": true
+      "protected": true,
+      "files": [
+        "skin.json",
+        "__init__.py",
+        "manifest.py",
+        "renderer.py",
+        "implementation.py"
+      ]
     },
     {
       "id": "tfl_dlr",
@@ -25,7 +39,14 @@
       "version": "1.0",
       "requires_departurebox": "0.2.1",
       "path": "tfl_dlr",
-      "protected": false
+      "protected": false,
+      "files": [
+        "skin.json",
+        "__init__.py",
+        "manifest.py",
+        "renderer.py",
+        "implementation.py"
+      ]
     }
   ]
 }
