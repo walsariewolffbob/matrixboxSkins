@@ -1,52 +1,67 @@
 {
-  "schema": 1,
-  "repository": "https://github.com/walsariewolffbob/matrixboxSkins",
-  "raw_base": "https://raw.githubusercontent.com/walsariewolffbob/matrixboxSkins/main",
-  "skins": [
-    {
-      "id": "sl_classic",
-      "name": "SL Classic",
-      "version": "1.1",
-      "requires_departurebox": "0.2.1",
-      "path": "sl_classic",
-      "protected": true,
-      "files": [
-        "skin.json",
-        "__init__.py",
-        "manifest.py",
-        "renderer.py",
-        "implementation.py"
-      ]
-    },
-    {
-      "id": "sl_list",
-      "name": "SL List",
-      "version": "1.1",
-      "requires_departurebox": "0.2.1",
-      "path": "sl_list",
-      "protected": true,
-      "files": [
-        "skin.json",
-        "__init__.py",
-        "manifest.py",
-        "renderer.py",
-        "implementation.py"
-      ]
-    },
-    {
-      "id": "tfl_dlr",
-      "name": "TfL DLR",
-      "version": "1.0",
-      "requires_departurebox": "0.2.1",
-      "path": "tfl_dlr",
-      "protected": false,
-      "files": [
-        "skin.json",
-        "__init__.py",
-        "manifest.py",
-        "renderer.py",
-        "implementation.py"
-      ]
-    }
-  ]
+"schema": 1,
+"repository": "https://github.com/walsariewolffbob/matrixboxSkins",
+"raw_base": "https://raw.githubusercontent.com/walsariewolffbob/matrixboxSkins/main",
+"skins": [
+{
+"id": "sl_classic",
+"name": "SL Classic",
+"version": "1.1",
+"requires_departurebox": "0.2.1",
+"path": "sl_classic",
+"protected": true,
+"files": [
+"skin.json",
+"**init**.py",
+"manifest.py",
+"renderer.py",
+"implementation.py"
+]
+},
+{
+"id": "list",
+"name": "List",
+"version": "1.1",
+"requires_departurebox": "0.2.1",
+"path": "list",
+"protected": true,
+"files": [
+"skin.json",
+"**init**.py",
+"manifest.py",
+"renderer.py",
+"implementation.py"
+]
+},
+{
+"id": "tfl_dlr",
+"name": "TfL DLR",
+"version": "1.0",
+"requires_departurebox": "0.2.1",
+"path": "tfl_dlr",
+"protected": false,
+"files": [
+"skin.json",
+"**init**.py",
+"manifest.py",
+"renderer.py",
+"implementation.py"
+]
+},
+{
+"id": "sl_modern",
+"name": "SL Modern",
+"version": "1.0",
+"requires_departurebox": "0.2.3",
+"path": "sl_modern",
+"protected": false,
+"files": [
+"skin.json",
+"**init**.py",
+"manifest.py",
+"renderer.py",
+"line_badges.py"
+]
+}
+]
 }
