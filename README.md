@@ -6,4 +6,6 @@ All skins uploaded here are functional, though check the minimum required versio
 
 In `manifest.py` you can also see which screen sizes are supported, and if the skin is optimised for that specific version.
 
-> An app for MatrixBox which will upload skins directly is currently under development.
+*An app for MatrixBox which will upload skins directly is currently under development.*
+
+> NB: These skins work with the RevampedDepartures app only. Not the current official Departures app.
